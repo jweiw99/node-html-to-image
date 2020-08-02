@@ -8,7 +8,7 @@ describe('quality', () => {
 
   beforeEach(() => {
     puppeteer = require('puppeteer')
-    page = puppeteer.launch({ args: ['--no-sandbox'] }).newPage()
+    page = puppeteer.launch().newPage()
     screenshot = page.$().screenshot
   })
 
